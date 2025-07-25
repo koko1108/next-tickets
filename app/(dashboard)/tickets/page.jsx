@@ -3,6 +3,10 @@ import TicketList from "./TicketList"; // 引入顯示票券列表的元件
 import Loading from "../loading"; // 引入自訂的載入中畫面元件
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Dojo Helpdesk | Tickets'
+}
+
 export default function Tickets() {
   return (
     <>

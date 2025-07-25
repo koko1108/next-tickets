@@ -1,7 +1,5 @@
 import { Noto_Sans_TC, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-// components
-import Navbar from "./components/Navbar";
 
 const notoSans = Noto_Sans_TC({
   variable: "--font-noto-sans",
@@ -24,8 +22,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${notoSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <Navbar />
-        <main className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">{children}</main>
+       {children}
       </body>
     </html>
   );
